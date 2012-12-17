@@ -1,0 +1,62 @@
+.span4 {
+/*    background-color: DarkGrey; */
+}
+
+.span9 {
+       
+}
+.center {
+    text-align: center;
+}
+
+body{
+/*    background-image:url(http://us.123rf.com/400wm/400/400/hannamariah/hannamariah1011/hannamariah101100006/8223819-truly-antique-leather-bound-books.jpg); */
+/*     background-image:url(http://us.123rf.com/400wm/400/400/hannamariah/hannamariah1011/hannamariah101100006/8223819-cuero-verdaderamente-antiguo-habia-enlazado-libros.jpg); */
+    background-image:url(https://c9.io/vladfrag/gmp/workspace/img/truly-antique-leather-bound-books.jpg);
+/*      background-image:url(http://upload.wikimedia.org/wikipedia/commons/0/00/St_John's_College_Old_Library_interior.jpg); */
+}
+
+.carousel{
+    background-color: #eeeeee; /* Old browsers */
+    background-color: rgba(222,222,222,1);
+    min-height: 700px;
+    border-radius: 15px;
+    
+}
+.car_menu{
+    background-color: #eeeeee; /* Old browsers */
+    background-color: rgba(222,222,222,1);
+    min-height: 700px;
+    border-radius: 15px;
+}
+h2{
+    color: rgb(216,216,216);
+/*    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+.car_menu li{
+    margin-top: 5px;   
+}
+.nav-pills li a{
+    background-color: rgba(222,222,222,1);
+    color:rgba(50, 50, 50, 1);
+}
+.nav-pills .active a{
+    background-color: rgba(200,200,200,1);
+}
+
+.car_menu li a{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #333;
+}
+h4{
+    margin-left: 50px;   
+}
+
+.contacts{
+    background-color: #eeeeee; /* Old browsers */
+    background-color: rgba(222, 222, 222, 1);   
+    min-height: 700px;
+    border-radius: 15px;
+}
