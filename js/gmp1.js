@@ -93,58 +93,18 @@ $(document).ready(
             var t = $(this);
             $(this).parents().closest('ul').children('li').removeClass('active');
             $(this).parent().addClass('active');
-            
-            // work with projects
-            //var new_projects = $("#ProjectsCarousel .item");
-            //$("#ProjectsCarousel .pr" + idx).css("display", "block");
-            //var nearest_idx = $("#ProjectsCarousel .pr" + idx).first().attr('data-index');
-            //$("#ServicesCarousel").carousel(nearest_idx);
-            //$("#ProjectsCarousel item").not(".pr" + idx).css("display", "none");
-            
-            //$("#ProjectsCarousel .carousel-active").removeClass('carousel-active').fadeOut(function(){
-            //    $(this).removeClass('carousel-inner');
-            //    $("#Projects" + idx).addClass('carousel-active').addClass('carousel-inner').fadeIn();
-            //    });
+
             return false;
         });
+
         $("#ServicesCarousel").bind('slid', function() {
             var t = $(this);
             var cur = $('#ServicesCarousel .active').index('#ServicesCarousel .item');
             $('#ServicesNav li').removeClass('active');
             $("#ServicesNav li a[data-index='" + cur + "']").parent().addClass('active');
-            
-            $("#ProjectsCarousel .carousel-inner").fadeToggle(function(){
-                $(this).removeClass('carousel-inner');
-                $("#Projects" + cur).addClass('carousel-inner').fadeToggle(function(){
-                    //$(this).addClass('carousel-inner');
-                    //$("#ProjectsCarousel").carousel(0);
-                });
-            });
+
+            $("#ProjectsCarousel").carousel('next');
         });
-        /*
-        $("#ProjectsCarousel .carousel-control").click(function(){
-            var right = $(this).hasClass('right');
-            var project = $("#ProjectsCarousel .active").attr('data-project'); // get current project
-            var idx = $("#ProjectsCarousel .active").attr('data-index');
-            var current_projects = $("#ProjectsCarousel .item[data-project='" + project + "']"); // projects for current service
-            var move_idx = -1;
-            var min_idx = 99;
-            current_projects.each(function(id,el){
-                var new_idx = parseInt($(this).attr("data-index"));
-                if ( new_idx > idx ){
-                    move_idx = new_idx;
-                }
-                if ( new_idx < min_idx ){
-                    min_idx = new_idx;
-                }
-            });
-            if ( move_idx > -1 ){
-                $("#ProjectsCarousel").carousel(move_idx);
-            } else {
-                $("#ProjectsCarousel").carousel(min_idx);
-            }
-            return false;
-        });
-        */
+
     }
 );

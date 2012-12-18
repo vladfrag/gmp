@@ -341,6 +341,12 @@
 
       $next = $next.length ? $next : this.$element.find('.item')[fallback]()
 
+      if (this.$element.first().attr("id") === "ProjectsCarousel"){
+          var act_service = $("#ServicesNav").children('.active').first().children('a').attr('data-index');
+          $next = next || $active[type]('.pr' + act_service);
+          $next = $next.length ? $next : this.$element.find('.item.pr' + act_service)[fallback]();
+      }
+
       e = $.Event('slide', {
         relatedTarget: $next[0]
       })
