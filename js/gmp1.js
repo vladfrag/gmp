@@ -87,24 +87,24 @@ $(document).ready(
         });
         
         $('.nav-list li a').click(function (){
-            //alert("click");
             var idx = parseInt($(this).attr('data-index'));
-            var car = $("#ServicesCarousel").carousel(idx);
-            var t = $(this);
+            $(this).parents('.top_level').find('.main_carousel').carousel(idx);
             $(this).parents().closest('ul').children('li').removeClass('active');
             $(this).parent().addClass('active');
 
             return false;
         });
 
-        $("#ServicesCarousel").bind('slid', function() {
-            var t = $(this);
-            var cur = $('#ServicesCarousel .active').index('#ServicesCarousel .item');
-            $('#ServicesNav li').removeClass('active');
-            $("#ServicesNav li a[data-index='" + cur + "']").parent().addClass('active');
+        $('.main_carousel').bind('slid', function() {
+            var cur_orig = $('#ServicesCarousel').find('.active').index('#ServicesCarousel .item');
+            var cur  = $(this).find('.item').index($(this).find('.active'));
 
-            $("#ProjectsCarousel").carousel('next');
+            var nav = $(this).parents('.top_level').find('.nav-list');
+            $(nav).find('li').removeClass('active');
+            $(nav).find("li a[data-index='" + cur + "']").parent().addClass('active');
+            if ($(this).attr('id') === "ServicesCarousel") {
+                $("#ProjectsCarousel").carousel('next');
+            }
         });
-
     }
 );

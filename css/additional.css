@@ -19,7 +19,7 @@ body{
 .carousel{
     background-color: #eeeeee; /* Old browsers */
     background-color: rgba(222,222,222,1);
-    min-height: 200px;
+    min-height: 250px;
     border-radius: 15px;
     
 }
@@ -33,7 +33,9 @@ body{
 #ServicesCarousel{
     min-height: 200px;
 }
-
+#PeopleCarousel .span6{
+    vertical-align:bottom;
+}
 .nav-list{
     border-radius: 15px;
 }
