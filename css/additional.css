@@ -34,15 +34,31 @@ body{
     min-height: 250px;
 }
 #ProjectsCarousel{
-
+    min-height: 400px;
 }
 #PeopleCarousel .span6{
     vertical-align:bottom;
-    min-height: 350px;
+    min-height: 380px;
 }
 .nav-list{
     border-radius: 15px;
 }
+.nav-header2{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    min-height: 80px;
+}
+.nav-header2 li{
+    margin-top: 30px;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    top: 30px;
+}
+
 /*
 .services_menu li a{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -57,7 +73,7 @@ h2{
 /*    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 .car_menu li{
-    margin-top: 5px;   
+    margin-top: 5px;
 }
 .nav-list li a{
     background-color: rgba(222,222,222,1);
@@ -68,6 +84,16 @@ h2{
     background-color: rgba(200,200,200,1);
 }
 
+h1{
+    margin-left: 10px;
+    color:rgba(50, 50, 50, 1);
+}
+h2{
+    margin-left: 60px;
+}
+#header-navbar{
+    margin-bottom: 0px;
+}
 .car_menu li a{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
