@@ -99,6 +99,10 @@ h2{
     font-family: 'MetaPro';
     margin-left: 60px;
 }
+.img-header{
+    margin-left: -10px;
+    margin-top: 3px;
+}
 #header-navbar{
     margin-bottom: 0px;
 }
