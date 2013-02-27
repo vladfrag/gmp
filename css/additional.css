@@ -31,10 +31,14 @@ body{
 }
 
 #ServicesCarousel{
-    min-height: 200px;
+    min-height: 250px;
+}
+#ProjectsCarousel{
+
 }
 #PeopleCarousel .span6{
     vertical-align:bottom;
+    min-height: 350px;
 }
 .nav-list{
     border-radius: 15px;
