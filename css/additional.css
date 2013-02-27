@@ -9,12 +9,18 @@
     text-align: center;
 }
 
+@font-face {
+    font-family: 'MetaPro';
+    src: url("/fonts/MetaPro-Normal.otf") format("opentype");
+}
+
 body{
 /*    background-image:url(http://us.123rf.com/400wm/400/400/hannamariah/hannamariah1011/hannamariah101100006/8223819-truly-antique-leather-bound-books.jpg); */
 /*     background-image:url(http://us.123rf.com/400wm/400/400/hannamariah/hannamariah1011/hannamariah101100006/8223819-cuero-verdaderamente-antiguo-habia-enlazado-libros.jpg); */
     background-image:url(/img/truly-antique-leather-bound-books.jpg);
     /*      background-image:url(http://upload.wikimedia.org/wikipedia/commons/0/00/St_John's_College_Old_Library_interior.jpg); */
 }
+
 
 .carousel{
     background-color: #eeeeee; /* Old browsers */
@@ -44,7 +50,7 @@ body{
     border-radius: 15px;
 }
 .nav-header2{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "MetaPro"", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 25px;
     min-height: 80px;
 }
@@ -85,10 +91,12 @@ h2{
 }
 
 h1{
+    font-family: 'MetaPro';
     margin-left: 10px;
     color:rgba(50, 50, 50, 1);
 }
 h2{
+    font-family: 'MetaPro';
     margin-left: 60px;
 }
 #header-navbar{
