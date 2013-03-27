@@ -22,7 +22,7 @@ body{
 }
 
 #Top {
-    background: url(/img/autumn-road-forest-wallpaper-sepia.jpg) 50% 0 repeat fixed; min-height: 1000px;
+    background: url(/img/diamond_upholstery.png) 50% 0 repeat fixed; min-height: 1000px;
     height: 3500px;
     margin: 0 auto;
     width: 97%;
@@ -33,7 +33,7 @@ body{
 .effect1{
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 20px 20px -20px #777;
 }
 
 .effect2
