@@ -131,5 +131,34 @@ $(document).ready(
             });
         });
 
+        $('#WhiteBack').click(function(){
+            $('#Top').css('background-image', 'url(/gmp/img/diamond_upholstery.png)');
+            return false;
+        });
+
+        $('#Autumn').click(function(){
+            $('#Top').css('background-image', 'url(/gmp/img/autumn-road-forest-wallpaper-191579.jpg)');
+            return false;
+        });
+
+        $('#Sepia').click(function(){
+            $('#Top').css('background-image', 'url(/gmp/img/autumn-road-forest-wallpaper-sepia.jpg)');
+            return false;
+        });
+
+        $('#Sofa').click(function(){
+            $('#Top').css('background-image', 'url(/gmp/img/sofa1.png)');
+            return false;
+        });
+
+        $('#Olives').click(function(){
+            $('#Top').css('background-image', 'url(/gmp/img/the-path-of-olive-trees.jpg)');
+            return false;
+        });
+        $('#Write').click(function(){
+            $('#Top').css('background-image', 'url(/gmp/img/write2.jpg)');
+            return false;
+        });
+
     }
 );
